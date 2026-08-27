@@ -1,5 +1,3 @@
-@"
-
 \# E-Commerce Manual Testing Portfolio
 
 
@@ -14,7 +12,7 @@ Manual testing portfolio for an E-Commerce web application.
 
 \- Sign Up
 
-\- Product 
+\- Product
 
 
 
@@ -42,5 +40,5 @@ Manual testing portfolio for an E-Commerce web application.
 
 Additional modules such as Cart, Checkout, Order, Payment, API Testing, and Database Testing will be added gradually.
 
-"@ | Out-File README.md -Encoding utf8
+
 
