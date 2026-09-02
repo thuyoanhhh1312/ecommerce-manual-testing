@@ -1,44 +1,28 @@
-\# E-Commerce Manual Testing Portfolio
-
-
+# E-Commerce Manual Testing Portfolio
 
 Manual testing portfolio for an E-Commerce web application.
 
+## Current Test Coverage
 
+- Sign In
+- Sign Up
+- Product
+- Admin Product Management
+- Admin Category Management
 
-\## Current Test Coverage
+## Test Artifacts
 
-\- Sign In
+- Test Cases
+- Test Execution Results
+- Bug Reports
+- Evidence
 
-\- Sign Up
+## Environment
 
-\- Product
+- Application: Local development environment
+- Testing Type: Manual Testing
+- Test Documentation: Microsoft Excel
 
+## Work in Progress
 
-
-\## Test Artifacts
-
-\- Test Cases
-
-\- Bug Reports
-
-\- Evidence
-
-
-
-\## Environment
-
-\- Application: Local development environment
-
-\- Testing Type: Manual Testing
-
-\- Test Documentation: Microsoft Excel
-
-
-
-\## Work in Progress
-
-Additional modules such as Cart, Checkout, Order, Payment, API Testing, and Database Testing will be added gradually.
-
-
-
+Additional modules such as Cart, Checkout, Order, Payment, Promotion, API Testing, and Database Testing will be added gradually.
