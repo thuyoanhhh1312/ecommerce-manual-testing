@@ -1,8 +1,10 @@
-﻿# E-Commerce Manual Testing Portfolio
+﻿# E-Commerce Software Testing Portfolio
 
-A software testing portfolio for an E-Commerce web application, focusing on test case design, manual test execution, defect identification, and bug reporting.
+A software testing portfolio for an E-Commerce web application, covering Manual Testing and API Testing.
 
 ## Test Coverage
+
+### Manual Testing
 
 - Sign Up
 - Sign In
@@ -10,20 +12,31 @@ A software testing portfolio for an E-Commerce web application, focusing on test
 - Admin Product Management
 - Admin Category Management
 
+### API Testing
+
+- Authentication
+  - Sign In
+  - Sign Up
+- Authorization
+  - Valid Token
+  - Missing Token
+  - Invalid Token
+
 ## Testing Approach
 
 - Positive Testing
 - Negative Testing
 - Input Validation
-- Role & Authorization Testing
+- Authentication Testing
+- Authorization Testing
+- Role & Permission Testing
 - Business Rule Validation
-- Admin-to-Customer Flow Validation
 
 ## Test Artifacts
 
 ### Test Cases
 
-Test cases are documented in Excel and include:
+Manual test cases are documented in Excel, including:
 
 - Test Scenario
 - Preconditions
@@ -36,7 +49,7 @@ Test cases are documented in Excel and include:
 
 ### Bug Reports
 
-Defects discovered during test execution are documented with:
+Defects discovered during testing are documented with:
 
 - Bug ID
 - Bug Title
@@ -49,16 +62,39 @@ Defects discovered during test execution are documented with:
 - Status
 - Evidence
 
+### API Testing
+
+API requests are documented using Postman Collections.
+
+Current API coverage includes:
+
+- Sign In API
+- Sign Up API
+- Authentication
+- Authorization
+
+## Project Structure
+
+ecommerce-manual-testing/
+- test-cases/
+  - Ecommerce_Testing_TestCases.xlsx
+- bug-reports/
+  - Bug_Report.xlsx
+- api-testing/
+  - E-Commerce_API_Testing.postman_collection.json
+- README.md
+
 ## Tools & Environment
 
-- Testing Type: Manual Functional Testing
-- Application: Local Development Environment
-- Test Documentation: Microsoft Excel
-- Browser: Google Chrome
-- Version Control: Git & GitHub
+- Manual Testing
+- Postman
+- Microsoft Excel
+- Google Chrome DevTools
+- Git & GitHub
+- Local Development Environment
 
 ## Next Steps
 
-- API Testing with Postman
+- Complete API Testing
 - Database Testing with SQL
 - Basic Test Automation
