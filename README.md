@@ -1,41 +1,140 @@
-# E-Commerce Manual Testing Portfolio
+# \# E-Commerce Manual Testing Portfolio
 
-Manual testing portfolio for an E-Commerce web application, focusing on functional testing, test case design, test execution, and defect identification.
+# 
 
-## Test Coverage
+# A software testing portfolio for an E-Commerce web application, focusing on test case design, manual test execution, defect identification, and bug reporting.
 
-- Sign Up
-- Sign In
-- Product
-- Admin Product Management
-- Admin Category Management
+# 
 
-## Test Artifacts
+# \## Test Coverage
 
-- Test Cases
-- Test Execution Results (PASS / FAIL)
-- Bug Reports
-- Test Evidence
+# 
 
-## Testing Approach
+# \- Sign Up
 
-- Positive Testing
-- Negative Testing
-- Input Validation
-- Role & Authorization Testing
-- Business Rule Validation
-- Admin-to-Customer Flow Validation
+# \- Sign In
 
-## Tools & Environment
+# \- Product
 
-- Application: Local Development Environment
-- Testing Type: Manual Functional Testing
-- Test Documentation: Microsoft Excel
-- Version Control: Git & GitHub
+# \- Admin Product Management
 
-## Next Steps
+# \- Admin Category Management
 
-- Bug Reporting
-- API Testing with Postman
-- Database Testing with SQL
-- Basic Test Automation
+# 
+
+# \## Testing Approach
+
+# 
+
+# \- Positive Testing
+
+# \- Negative Testing
+
+# \- Input Validation
+
+# \- Role \& Authorization Testing
+
+# \- Business Rule Validation
+
+# \- Admin-to-Customer Flow Validation
+
+# 
+
+# \## Test Artifacts
+
+# 
+
+# \### Test Cases
+
+# Test cases are documented in Excel and include:
+
+# \- Test Scenario
+
+# \- Preconditions
+
+# \- Test Steps
+
+# \- Test Data
+
+# \- Expected Result
+
+# \- Actual Result
+
+# \- PASS / FAIL Status
+
+# \- Evidence
+
+# 
+
+# \### Bug Reports
+
+# Defects discovered during test execution are documented with:
+
+# \- Bug ID
+
+# \- Bug Title
+
+# \- Environment
+
+# \- Steps to Reproduce
+
+# \- Expected Result
+
+# \- Actual Result
+
+# \- Severity
+
+# \- Priority
+
+# \- Status
+
+# \- Evidence
+
+# 
+
+# \## Project Structure
+
+# 
+
+# ecommerce-manual-testing/
+
+# \- test-cases/
+
+# &#x20; - Ecommerce\_Testing\_TestCases.xlsx
+
+# \- bug-reports/
+
+# &#x20; - Bug\_Report.xlsx
+
+# \- evidence/
+
+# \- README.md
+
+# 
+
+# \## Tools \& Environment
+
+# 
+
+# \- Testing Type: Manual Functional Testing
+
+# \- Application: Local Development Environment
+
+# \- Test Documentation: Microsoft Excel
+
+# \- Browser: Google Chrome
+
+# \- Version Control: Git \& GitHub
+
+# 
+
+# \## Next Steps
+
+# 
+
+# \- API Testing with Postman
+
+# \- Database Testing with SQL
+
+# \- Basic Test Automation
+
