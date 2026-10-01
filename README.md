@@ -18,9 +18,19 @@ A software testing portfolio for an E-Commerce web application, covering Manual 
   - Sign In
   - Sign Up
 - Authorization
-  - Valid Token
+  - Admin Authorization
+  - Staff Authorization
+  - Customer Access Restriction
   - Missing Token
   - Invalid Token
+- Product
+  - Get Product List
+  - Get Product Detail
+  - Search Product
+  - Create Product
+  - Update Product
+  - Required Field Validation
+  - Role & Permission Testing
 
 ## Testing Approach
 
@@ -71,7 +81,13 @@ Current API coverage includes:
 - Sign In API
 - Sign Up API
 - Authentication
-- Authorization
+- Authorization and Role-based Access
+- Product List API
+- Product Detail API
+- Product Search API
+- Create Product API
+- Update Product API
+- Required Field Validation
 
 ## Project Structure
 
@@ -95,6 +111,5 @@ ecommerce-manual-testing/
 
 ## Next Steps
 
-- Complete API Testing
 - Database Testing with SQL
-- Basic Test Automation
+- Basic Test Automation with Playwright

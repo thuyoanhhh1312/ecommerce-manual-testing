@@ -627,7 +627,7 @@
       "name": "Authorization",
       "item": [
         {
-          "name": "Current Admin or Staff",
+          "name": "Authorization - Admin Token",
           "request": {
             "auth": {
               "type": "bearer",
@@ -656,14 +656,14 @@
           "response": []
         },
         {
-          "name": "Current Admin or Staff - Invalid Token",
+          "name": "Authorization - Invalid Token",
           "request": {
             "auth": {
               "type": "bearer",
               "bearer": [
                 {
                   "key": "token",
-                  "value": "{{Admin_token}}",
+                  "value": "{{invalid-token}}",
                   "type": "string"
                 }
               ]
@@ -685,7 +685,7 @@
           "response": []
         },
         {
-          "name": "Current Admin or Staff - No Token",
+          "name": "Authorization- No Token",
           "request": {
             "auth": {
               "type": "noauth"
@@ -701,6 +701,545 @@
                 "api",
                 "auth",
                 "current-admin-or-staff"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Authorization - Customer Token",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{Customer_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/auth/current-admin-or-staff",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "current-admin-or-staff"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Authorization - Staff Token",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{Staff_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/auth/current-admin-or-staff",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "current-admin-or-staff"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Get Product List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/products/with-review-summary",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "products",
+                "with-review-summary"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/get-product-by-slug/bong-tai-bac-dinh-da-xmxmk000167",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "get-product-by-slug",
+                "bong-tai-bac-dinh-da-xmxmk000167"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Product",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/search-product?keyword=bông tai&limit=8&page=1&sort_field=product_name&sort_order=ASC",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "search-product"
+              ],
+              "query": [
+                {
+                  "key": "keyword",
+                  "value": "bông tai"
+                },
+                {
+                  "key": "limit",
+                  "value": "8"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "sort_field",
+                  "value": "product_name"
+                },
+                {
+                  "key": "sort_order",
+                  "value": "ASC"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Product - Admin",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{Admin_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product_name",
+                  "value": "API Test Product 001",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Product created by Postman",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "590000",
+                  "type": "text"
+                },
+                {
+                  "key": "quantity",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "category_id",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "subcategory_id",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "is_active",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "images",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/DELL1/Downloads/sp-gnddddw013457-nhan-cuoi-kim-cuong-vang-trang-14k-pnj-1.png"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/products",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Product - Missing Required Field",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{Admin_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product_name",
+                  "value": "API Test Product 01",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Product created by Postman",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "590000",
+                  "type": "text"
+                },
+                {
+                  "key": "quantity",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "category_id",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "subcategory_id",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "is_active",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "images",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/DELL1/Downloads/sp-gnddddw013457-nhan-cuoi-kim-cuong-vang-trang-14k-pnj-1.png"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/products",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Edit Product - Admin",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{Admin_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product_name",
+                  "value": "API Test Product 001",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Product created by Postman",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "590000",
+                  "type": "text"
+                },
+                {
+                  "key": "quantity",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "category_id",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "subcategory_id",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "is_active",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "images",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/DELL1/Downloads/sp-gnddddw013457-nhan-cuoi-kim-cuong-vang-trang-14k-pnj-1.png"
+                  ]
+                },
+                {
+                  "key": "existingImageIds",
+                  "value": "[131]",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/products/109",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "products",
+                "109"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Edit Product - Staff",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{Staff_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product_name",
+                  "value": "API Test Product 001",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Product created by Postman",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "590000",
+                  "type": "text"
+                },
+                {
+                  "key": "quantity",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "category_id",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "subcategory_id",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "is_active",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "images",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/DELL1/Downloads/sp-gnddddw013457-nhan-cuoi-kim-cuong-vang-trang-14k-pnj-1.png"
+                  ]
+                },
+                {
+                  "key": "existingImageIds",
+                  "value": "[131]",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/products/109",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "products",
+                "109"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Product - Staff",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{Staff_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product_name",
+                  "value": "API Test Product 002",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Product created by Postman",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "590000",
+                  "type": "text"
+                },
+                {
+                  "key": "quantity",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "category_id",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "subcategory_id",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "is_active",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "images",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/DELL1/Downloads/sp-gnddddw013457-nhan-cuoi-kim-cuong-vang-trang-14k-pnj-1.png"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/api/products",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "products"
               ]
             }
           },
